@@ -79,12 +79,12 @@ function InputBox() {
             <div className="flex justify-evenly p-3 border-t">
                 <div className="inputIcon">
                     <VideoCameraIcon className="h-7 text-red-500" />
-                    <p className="text-xs sm:text-sm xl:text-base">Live Video</p>
+                    <p className="text-xs sm:text-sm xl:text-base">Video</p>
                 </div>
 
                 <div onClick={() => filePickerRef.current.click()} className="inputIcon">
                     <CameraIcon className="h-7 text-green-500" />
-                    <p className="text-xs sm:text-sm xl:text-base">Photo/video</p>
+                    <p className="text-xs sm:text-sm xl:text-base">Photo</p>
                     <input ref={filePickerRef} onChange={addImageToPost} type="file" hidden />
                 </div>
 

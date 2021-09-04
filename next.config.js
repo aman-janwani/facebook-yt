@@ -1,5 +1,13 @@
-module.exports = {
-    images: {
+const withPWA = require("next-pwa");
+
+module.exports = withPWA({
+  pwa: {
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+  },
+
+  images: {
         domains: [
             "links.papareact.com",
             "platform-lookaside.fbsbx.com",
@@ -7,4 +15,4 @@ module.exports = {
             "lh3.googleusercontent.com",
         ],
     },
-};
+});
